@@ -9,6 +9,12 @@
   font-size: small;
   padding: 10px;
   width: 180px;
+  transition-duration: 0.2s;
+}
+.btn-putih:hover{
+  transition-duration: 0.2s;
+  color: #000000;
+  background-color: #a8a8a8 !important;
 }
 .bg-default{
   background-color: #364760;
