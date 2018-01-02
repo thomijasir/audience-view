@@ -1,0 +1,185 @@
+.btn-ijo{
+  background-color: #35a31f !important;
+  font-size: 13px;
+}
+.btn-putih{
+  background-color: #ffffff !important;
+  color: #000000;
+  font-weight: bold;
+  font-size: small;
+  padding: 10px;
+  width: 180px;
+}
+.bg-default{
+  background-color: #364760;
+}
+
+.active-line{
+  border-bottom: 2px solid #ffffff;
+}
+
+.navbar .divider-vertical {
+  height: 30px;
+  margin: 0 9px;
+  border-right: 2px solid rgba(255, 255, 255, 0.31);
+}
+
+.navbar .divider-vertical-black {
+  height: 30px;
+  margin: 0 9px;
+  border-right: 2px solid rgba(0, 0, 0, 0.05);
+
+}
+
+
+body {
+  background-color: #364760;
+  font-family: "Open Sans";
+}
+
+.dd{
+  border: solid #000000 3px;
+}
+
+.nav-one{
+  background-color: #205081;
+  font-size: small;
+  color: #fff;
+}
+.nav-second{
+  background-color: #364760;
+  margin-bottom: 20px;
+  font-size: small;
+  font-weight: bold;
+  color: #ffffff;
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.2), 0 2px 5px 0 rgba(0, 0, 0, 0.19);
+}
+.navbar-nav .nav-item .nav-link{
+  color: #ffffff !important;
+}
+.navbar-nav .nav-item{
+  padding-left: 12px;
+  padding-right: 12px;
+}
+.on-tabs{
+  margin: 15px;
+}
+.card-content{
+  margin: 10px;
+}
+.menu-table-card{
+  margin-bottom: 10px;
+}
+.menu-table-card .list-menu{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+.list-menu li{
+  display: inline;
+  margin-right: 5px;
+}
+
+.list-menu .menu-right{
+  float: right;
+  margin-left: 10px;
+}
+.card-block{
+  padding: 10px;
+}
+.card-block .numactive{
+  font-size: 32px;
+}
+.list-group-item .title{
+  font-size: 16px;
+  margin-bottom: -1px;
+}
+.list-group-item span{
+  font-size: 13px;
+}
+.hidden-bottom-border{
+  border-bottom: solid 3px #364760;
+}
+.filter-date{
+  margin-bottom: 15px;
+}
+.col-md-3 .card{
+  color: #ffffff !important;
+  border-left: solid 3px #364760;
+  border-right: solid 3px #364760;
+}
+.hide-left-right{
+  border-left: solid 3px #364760;
+  border-right: solid 3px #364760;
+}
+.filter-date .form-group{
+  margin-right: 10px !important;
+}
+.title-names{
+  font-size: 14px;
+  font-weight: bold;
+  margin-bottom: -8px;
+}
+.description-name{
+  font-size: 12px;
+}
+
+.input-sm{
+  height: 30px !important;
+  padding: 5px;
+  background-color: #205081;
+  color: #ffffff;
+  border-radius: 2px;
+}
+.input-ss{
+  height: 40px !important;
+  padding: 5px;
+  border-radius: 2px;
+  background-color: #e2e7ec !important;
+  border: 1px solid #e2e7ec;
+}
+.input-sss{
+  border: 1px solid #ffffff;
+  height: 40px !important;
+  padding: 5px;
+  border-radius: 2px;
+  background-color: #ffffff !important;
+}
+/* Tabs Control
+*******************/
+
+.nav-tabs > li > a:focus{
+  background-color: #ecf2f6 !important;
+  border: medium none;
+  border-radius: 0;
+}
+.nav-tabs{
+  width: 100%;
+}
+.nav-tabs .nav-item .nav-link{
+  color: #364760 !important;
+  font-weight: bold;
+  font-size: 14px;
+}
+/* Table Control
+*********************/
+.table-striped{
+  background-color: #ffffff;
+}
+.table-striped > tbody > tr:nth-child(2n+1) > td, .table-striped > tbody > tr:nth-child(2n+1) > th {
+  background-color: #f4f9fc;
+}
+.table > tbody > tr > td {
+  vertical-align: middle;
+}
+
+/* Costume Grid
+*********************/
+.no-gutter > [class*='col-'] {
+  padding-right:0;
+  padding-left:0;
+}
+
+@media (min-width: 992px) {
+
+}
