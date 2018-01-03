@@ -24,20 +24,6 @@
   border-bottom: 2px solid #ffffff;
 }
 
-.navbar .divider-vertical {
-  height: 30px;
-  margin: 0 9px;
-  border-right: 2px solid rgba(255, 255, 255, 0.31);
-}
-
-.navbar .divider-vertical-black {
-  height: 30px;
-  margin: 0 9px;
-  border-right: 2px solid rgba(0, 0, 0, 0.05);
-
-}
-
-
 body {
   background-color: #364760;
   font-family: "Open Sans";
@@ -64,8 +50,116 @@ body {
   color: #ffffff !important;
 }
 .navbar-nav .nav-item{
-  padding-left: 12px;
-  padding-right: 12px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.navbar .divider-vertical {
+  display: inline-block;
+  height: 30px;
+  margin: 0 0px;
+  border-right: 2px solid rgba(255, 255, 255, 0.31);
+}
+
+.navbar .divider-vertical-black {
+  height: 30px;
+  margin: 2px 2px;
+  border-right: 2px solid rgba(0, 0, 0, 0.05);
+
+}
+
+.navbar .divider-vertical-black-no-margin {
+  height: 30px;
+  margin: 2px 0px;
+  border-right: 2px solid rgba(0, 0, 0, 0.05);
+
+}
+
+.normalize-padding{
+  margin-left: -20px;
+  margin-right: 5px;
+}
+
+@media (min-width: 480px) {
+  .normalize-padding{
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+  .hide-on-small{
+    display: none;
+  }
+  .show-on-small{
+    visibility: visible;
+  }
+}
+
+/* avability control
+***********************/
+@media (min-width:992px) {
+  .desktop-only {
+    display:block !important;
+  }
+
+  .mobile-only {
+    display:none !important;
+  }
+
+}
+
+@media (max-width: 991px) {
+  .mobile-only {
+    display:block !important;
+  }
+
+  .desktop-only {
+    display:none !important;
+  }
+}
+
+.navbar-brand{
+  margin-right: 40px;
+}
+
+/* Mobile Navigation Control
+*****************************
+ */
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
 }
 .on-tabs{
   margin: 15px;

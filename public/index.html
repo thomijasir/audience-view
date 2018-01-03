@@ -23,7 +23,7 @@
   <body>
 
     <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-dark nav-one">
+    <nav class="navbar navbar-expand-lg navbar-dark nav-one desktop-only">
       <div class="container">
         <a class="navbar-brand" href="#">MANAGIX</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
@@ -44,14 +44,14 @@
           </ul>
 
           <ul class="navbar-nav ml-auto">
-            <li class="nav-item divider-vertical-black">
-              <a class="nav-link" href="#"><i class="fa fa-bell" aria-hidden="true" style="font-size: 24px"></i></a>
+            <li class="nav-item normalize-padding">
+              <a class="nav-link" href="#"><i class="fa fa-bell" aria-hidden="true" style="font-size: 20px"></i></a>
             </li>
-            <li class="nav-item divider-vertical-black">
-              <a class="nav-link" href="#"><i class="fa fa-question-circle" aria-hidden="true" style="font-size: 24px"></i></a>
+            <li class="nav-item normalize-padding">
+              <a class="nav-link" href="#"><i class="fa fa-question-circle" aria-hidden="true" style="font-size: 20px"></i></a>
             </li>
             <li class="nav-item">
-              <form class="navbar-search pull-left">
+              <form class="navbar-search pull-left" style="margin-top: 5px">
                 <select class="input-sm" id="sel1">
                   <option>Bramstya Farid USD (5)</option>
                   <option>Bramstya Farid USD (5)</option>
@@ -73,32 +73,51 @@
       </div>
     </nav>
     <!-- Bottom NAV -->
-    <nav class="navbar navbar-expand-lg navbar-dark nav-second">
+    <nav class="navbar navbar-expand-lg navbar-dark nav-second desktop-only">
       <div class="container">
         <div class="collapse navbar-collapse" id="navbarResponsives">
           <ul class="navbar-nav">
-
             <li class="nav-item divider-vertical">
-              <a class="nav-link active-line" href="#">Audience Search</a>
+              <a class="nav-link active-line margin-push-rf-10" href="#" >Audience Search</a>
             </li>
             <li class="nav-item divider-vertical">
-              <a class="nav-link" href="#">Audience Template</a>
+              <a class="nav-link margin-push-rf-10" href="#">Audience Template</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Audience Collection</a>
+              <a class="nav-link margin-push-rf-10" href="#">Audience Collection</a>
             </li>
           </ul>
         </div>
       </div>
     </nav>
 
+    <!-- Navigation For Mobile -->
+    <nav class="navbar navbar-expand-lg navbar-dark nav-one mobile-only" style="margin-bottom: 20px">
+      <div class="container">
+        <a class="navbar-brand" href="#">MANAGIX</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" onclick="openNav()" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      </div>
+    </nav>
+    <div id="mySidenav" class="sidenav">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      <a href="#"><i class="fa fa-bell" aria-hidden="true" style="font-size: 20px"></i> <i class="fa fa-question-circle" aria-hidden="true" style="font-size: 20px"></i></a>
+      <a href="#">Campangin Manager</a>
+      <a href="#">Tools</a>
+      <a href="#"><a class="btn btn-success btn-ijo" href="#">Create Campangin</a></a>
+    </div>
+
     <!-- Page Content -->
     <div class="container">
 
       <div class="row">
+
         <!-- Post Content Column -->
         <div class="col-lg-9">
           <div class="row filter-date">
+
+            <br>
             <form class="form-inline" action="/action_page.php">
               <div class="form-group">
                 <select class="input-ss">
@@ -273,6 +292,16 @@
     <!-- Bootstrap core JavaScript -->
     <script src="vendor/jquery/jquery.min.js"></script>
     <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script type="text/javascript">
+        /* Costume Script Slides Navigation */
+        function openNav() {
+            document.getElementById("mySidenav").style.width = "250px";
+        }
+
+        function closeNav() {
+            document.getElementById("mySidenav").style.width = "0";
+        }
+    </script>
 
   </body>
 
